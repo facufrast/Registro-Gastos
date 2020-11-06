@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_caja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/tv_caja"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_ingreso"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ingreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/tv_ingreso"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_egreso"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_egreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_egreso"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lunes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/txt_lunes"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_caja" />
+
+    <TextView
+        android:id="@+id/tv_martes"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_martes"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lunes" />
+
+    <TextView
+        android:id="@+id/tv_miercoles"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_miercoles"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_martes" />
+
+    <TextView
+        android:id="@+id/tv_jueves"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_jueves"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_miercoles" />
+
+    <TextView
+        android:id="@+id/tv_viernes"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_viernes"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jueves" />
+
+    <TextView
+        android:id="@+id/tv_sabado"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_sabado"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_viernes" />
+
+    <TextView
+        android:id="@+id/tv_domingo"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="67dp"
+        android:text="@string/txt_domingo"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_viernes" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_total"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_domingo" />
+
+    <EditText
+        android:id="@+id/txt_cajaLunes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_ingresoLunes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_caja" />
+
+    <EditText
+        android:id="@+id/txt_ingresoLunes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_egresoLunes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ingreso" />
+
+    <EditText
+        android:id="@+id/txt_egresoLunes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_egreso" />
+
+    <EditText
+        android:id="@+id/txt_cajaMartes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_ingresoLunes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cajaLunes" />
+
+    <EditText
+        android:id="@+id/txt_ingresoMartes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_egresoMartes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoLunes" />
+
+    <EditText
+        android:id="@+id/txt_egresoMartes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_egresoLunes" />
+
+    <EditText
+        android:id="@+id/txt_cajaMiercoles"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/txt_ingresoLunes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cajaMartes" />
+
+    <EditText
+        android:id="@+id/txt_ingresoMiercoles"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_egresoMiercoles"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoMartes" />
+
+    <EditText
+        android:id="@+id/txt_egresoMiercoles"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_egresoMartes" />
+
+    <EditText
+        android:id="@+id/txt_cajaJueves"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_ingresoLunes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cajaMiercoles" />
+
+    <EditText
+        android:id="@+id/txt_ingresoJueves"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_egresoJueves"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoMiercoles" />
+
+    <EditText
+        android:id="@+id/txt_egresoJueves"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_egresoMiercoles" />
+
+    <EditText
+        android:id="@+id/txt_cajaViernes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_ingresoLunes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cajaJueves" />
+
+    <EditText
+        android:id="@+id/txt_ingresoViernes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_egresoViernes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoJueves" />
+
+    <EditText
+        android:id="@+id/txt_egresoViernes"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_egresoJueves" />
+
+    <EditText
+        android:id="@+id/txt_cajaSabado"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_ingresoLunes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cajaViernes" />
+
+    <EditText
+        android:id="@+id/txt_ingresoSabado"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_egresoSabado"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoViernes" />
+
+    <EditText
+        android:id="@+id/txt_egresoSabado"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_egresoViernes" />
+
+    <EditText
+        android:id="@+id/txt_cajaDomingo"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_ingresoLunes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cajaSabado" />
+
+    <EditText
+        android:id="@+id/txt_ingresoDomingo"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txt_egresoDomingo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoSabado" />
+
+    <EditText
+        android:id="@+id/txt_egresoDomingo"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/placeholder_pesos"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_egresoSabado" />
+
+    <TextView
+        android:id="@+id/tv_totalIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/placeholder_pesos"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_totalEgreso"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresoDomingo" />
+
+    <TextView
+        android:id="@+id/tv_totalEgreso"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/placeholder_pesos"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_egresoDomingo" />
+
+    <TextView
+        android:id="@+id/tv_totalCaja"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/placeholder_pesos"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_totalIngreso"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cajaDomingo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        android:background="@drawable/background_button_default"
+        android:onClick="editarDatos"
+        android:padding="10dp"
+        android:text="@string/btn_editar"
+        android:textColor="@color/buttonDefaultTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_totalCaja" />
+
+    <Spinner
+        android:id="@+id/spinner_opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/spinner_dias"
+        app:layout_constraintTop_toBottomOf="@+id/tv_totalIngreso" />
+
+    <Spinner
+        android:id="@+id/spinner_dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/tv_totalCaja" />
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_button_default"
+        android:onClick="guardarDatos"
+        android:padding="10dp"
+        android:text="@string/btn_guardar"
+        android:textColor="@color/buttonDefaultTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/btn_borrar"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_button_default"
+        android:onClick="borrarDatos"
+        android:padding="10dp"
+        android:text="@string/btn_borrar"
+        android:textColor="@color/buttonDefaultTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
